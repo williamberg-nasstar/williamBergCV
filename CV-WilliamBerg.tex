@@ -28,20 +28,17 @@
 
 \documentclass[10pt]{article} % Font size (10pt, 11pt or 12pt)
 
-\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
-
+\usepackage[hmargin=1cm, vmargin=1cm]{geometry} % Document margins
 \usepackage{amsmath}
-
 \usepackage{marvosym} % Required for symbols in the colored box
 \usepackage{ifsym} % Required for symbols in the colored box
-
 \usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
 
 % Fonts and tweaks for XeLaTeX
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont[Mapping=tex-text]{Palatino Linotype} % Main document font
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Berthold Akzidenz Grotesk BE Bold} % Font for your name at the top
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Calibri} % Font for your name at the top
 %\setmonofont[Scale=MatchLowercase]{Consolas}
 
 % Colors for links, text and headings
@@ -72,165 +69,73 @@
 \usepackage{titlesec} % Allows creating custom \section's
 
 % Format of the section titles
-\titleformat{\section}{\color{headings}\fontspec{Futura Hv BT}
+\titleformat{\section}{\color{headings}\fontspec{HelveticaNeue LT 63 MdEx}
 \scshape\normalsize\raggedright}{}{0em}{}[\color{black}\titlerule]
 
-\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around titles
 
-% Fully indented text
-\newenvironment{indented}[1]%
-{\begin{list}{}%
-  {\setlength{\leftmargin}{#1}}%
-  \item[]%
-}
-{\end{list}}
 
 \begin{document}
 
 \color{text1} % Sets the default text color for the whole document
 
-%----------------------------------------------------------------------------------------
-%	TITLE
-%----------------------------------------------------------------------------------------
-
-\par{\centering{\sffamily\fontsize{26pt}{30pt}\selectfont William Berg}\\[1pt]}
-\par{\centering{\color{headings}Software engineer\\}}
-	
-%----------------------------------------------------------------------------------------
-
-
 %
 %
-%	LEFT SIDE
+%	NAME
 %
 %
 
 \begin{minipage}[t]{0.5\textwidth}
 \vspace{0pt} % Trick for alignment
-	
-%----------------------------------------------------------------------------------------
-%	SUMMARY
-%----------------------------------------------------------------------------------------
 
-\normalsize{I develop, operate and maintain front end, back end and mobile applications for both fun and profit.
-\\\\I also find time to make music, muse about AI and the mind, and play Doom.}\\
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-
-\section{Skills}
-
-%----------------------------------------------------------------------------------------
-% LANGUAGES
-
-%{\raggedleft\textsc{}\par} % For inserting a right-justified date or something similar
-
-{\raggedright\large Languages\hspace{5pt}\parbox[top][10pt][c]{100pt}{\includegraphics[height=20pt]{res/java}\includegraphics[height=20pt]{res/android}
-\includegraphics[height=20pt]{res/tux}\includegraphics[height=20pt]{res/perl.jpg}}\\}
-%\includegraphics[height=17pt]{res/python}
-
-
-\begin{indented}{1cm}
-\normalsize{\textbf{Java}, \textbf{Android}, Bash, Perl, and a little Python, Scala, C\# and \LaTeX. I'm learning more all the time.}
-\end{indented}
-
-%----------------------------------------------------------------------------------------
-% JAVA AND ANDROID
-
-{\raggedright\large Java and Android\\}
-
-%\begin{indented}{2cm}
-\normalsize{
-\begin{itemize}
-  \item \textbf{OpenMarket.} Taking Java projects from client specification to operation. Domain is SMS and other mobile service provision.
-  \begin{itemize}
-      \item Mostly Java webapps, MySQL, and Git. I use Guice, Wicket, JGroups and Cassandra.
-  \end{itemize}
-  \item \textbf{Master's project.} Developed \textit{SoundBites}, an Android application for environment recognition through sound. Performed research into sound analysis techniques and machine learning algorithms.
-  \begin{itemize}
-    \item Application: \emph{Android}. Required design and implementation of simple user interfaces, audio recording and inter-application communication.
-    \item Trial program: \emph{Java}. Evaluated the performance of a variety of sound analysis and machine learning algorithms.
-  \end{itemize}
-  \item \textbf{Scholastic projects in Java.} These included the group conceptualisation and creation of a multiplayer RPG for Android (\emph{Nanoscape}), and a multi-agent trading system using a trust network in Java (\emph{YES Exchange System}).
-  \item \textbf{Amateur projects in Java.} These include a Go board game application in Swing (\emph{OddGo}), simple granular sound manipulation suite (\emph{audioDCB}) and unfinished game engine (\emph{TimTom}). \parbox[top][10pt][t]{100pt}{\href{http://github.com/williamberg}{\includegraphics[height=15pt]{res/github}\includegraphics[width=10pt]{res/external_link}}}
-\end{itemize}
-}
-%\end{indented}
-
-%----------------------------------------------------------------------------------------
-% OPERATING SYSTEMS
-
-{\raggedright\normalsize\textbf{Operating Systems}}
-\begin{indented}{1cm}
-\normalsize{Extended experience in \textbf{Windows} and \textbf{GNU/Linux} environments. Currently maintaining a home Debian server.}
-\end{indented}
-
-%----------------------------------------------------------------------------------------
-% DEVELOPMENT TOOLS
-
-{\raggedright\textbf{Development tools}}
-\begin{indented}{1cm}
-\normalsize{\textbf{Eclipse}, Maven} \\
-\small{Visual Studio 2008}
-\end{indented}
-
-%----------------------------------------------------------------------------------------	
-
-
-%
-%
-% RIGHT SIDE
-%
-%
+\vspace*{1em}
+\par{\centering{\sffamily\fontsize{36pt}{30pt}\selectfont William Berg}\\}
+\par{\centering{\color{headings}Software engineer\\}}
+\vspace*{\fill}
 
 \end{minipage} % End left-hand side of the page
-\hfill
 \begin{minipage}[t]{0.44\textwidth} 
 \vspace{0pt} %trick for alignment
 
-%----------------------------------------------------------------------------------------
-%	COLORED BOX
-%----------------------------------------------------------------------------------------
+%
+%
+%   CONTACT DETAILS
+%
+%
 
 \colorbox{shade}{\textcolor{text1}{
 \begin{tabular}{c|p{7cm}}
 \raisebox{-3pt}{\textifsymbol{18}} & 12 Friars Pl Ln, London, UK W3 7AW \\ % Address 
 %\raisebox{-3pt}{\Mobilefone} & +44 (0)7951 491 360 \\ % Phone number
 \raisebox{-2pt}{\Letter} & \href{mailto:william.berg08@gmail.com}{william.berg08@gmail.com} \\ % Email address
-\raisebox{-1pt}{\Keyboard} & \href{http://www.bio-gen.co.uk}{http://www.bio-gen.co.uk} \\ % Website
+\raisebox{-1pt}{\Keyboard} & \href{http://wberg.mine.nu}{http://wberg.mine.nu} \\ % Website
 \includegraphics[width=10pt]{res/external_link} &
-\href{http://plus.google.com/101851085676219422780/posts}{\includegraphics[height=10pt]{res/google_plus}}
-\href{http://uk.linkedin.com/pub/william-berg/27/309/72a}{\includegraphics[height=10pt]{res/linkedin}} % yes, these have to be pdfs or the links won't work. flatex
+\href{http://uk.linkedin.com/pub/william-berg/27/309/72a}{\includegraphics[height=10pt]{res/linkedin}}
+\href{http://stackoverflow.com/users/1047597/william-berg}{\includegraphics[height=10pt]{res/stackoverflow}} % yes, these have to be pdfs or the links won't work. flatex
 \href{http://careers.stackoverflow.com/wberg}{\includegraphics[height=10pt]{res/stackoverflow_careers}}
-\href{http://github.com/williamberg}{\includegraphics[height=10pt]{res/github}}
 \end{tabular}
 }}\\[10pt]
+	
+\end{minipage} % End right-hand side of the page
+
+%
+%
+%   MAIN CONTENT
+%
+%
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 
 %\section{\fontsize{11pt}{101pt}\selectfont Education} 
-\section{Education} 
+\section{Education}
+\hfill \break
 
-\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+\begin{tabular}{l l l}
 
-%----------------------------------------------------------------------------------------
-% EDUCATION -1-
-
-2008 -- 2012 & \textbf{MEng (Hons) Computing (2:1)} \\ 
-& \textit{Imperial College London}\\
-	 
-%----------------------------------------------------------------------------------------
-% EDUCATION -2-
-
-&\\
-2002 -- 2008 & \textbf{ABAB at A-level} \\ 
-& \small Further Maths, Physics, Computing \\
-& \textit{Latymer Upper School}\\
-	
-%----------------------------------------------------------------------------------------
+2008 -- 2012 & \textbf{MEng (Hons) Computing (2:1)} & \textit{Imperial College London}\\
+2002 -- 2008 & \textbf{A-level} & \textit{Latymer Upper School}\\
 
 \end{tabular}\\[10pt]
 
@@ -238,90 +143,72 @@
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-%\section{\fontsize{11pt}{101pt}\selectfont Experience}
 \section{Experience}
+\hfill \break
 
-\begin{tabular}{rl}
+\begin{tabular}{l p{0.8\linewidth}}
 
-2012 -- now & \textbf{Software engineer}\\
-& \textit{OpenMarket}\\
-& Java; $\approx1$ month bespoke client tasks \\
-& Clients incl. \textit{Three}, \textit{Blackberry}, \textit{Virgin} \\
-& \\
-2011 \textit{($\frac{1}{2}$ yr)} & \textbf{Software development internship}\\
-& \textit{Amadeus}\\
-& C\# for mobile, Perl, and C++\\
-& in Windows and Linux environments \\
-
-%----------------------------------------------------------------------------------------
+2014 -- 2015 & \textbf{Software engineer} at \textit{MetaBroadcast} \\
+& I worked part-time at MetaBroadcast whilst simultaneously developing an Android app that enhanced phone functionality in real-time by analysing contextual audio from the microphone. I later stopped development on the app and joined full time, working mainly with Java. Continuous integration was managed with Jenkins. Projects I worked on include: \\
+& \parbox{0.8\textwidth}{
+  \begin{itemize}
+  \item An application that took school curricula and supplied metadata for relevant educational video clips for a client's application
+  \item A system that managed a cache of suggested content for a programme recommendation service
+  \end{itemize}}
+&
+2012 -- 2014 & \textbf{Software engineer} at \textit{OpenMarket} \\
+& I worked in the Solutions Consulting team. I worked with team members and clients to specify, develop and maintain a range of Java web applications that managed customer subscriptions and performed mass-mailing for clients. We used custom tools to achieve continuous integration. Projects I worked on included: \\
+& \parbox{0.8\textwidth}{
+  \begin{itemize}
+  \setlength\itemsep{-1em}
+  \item A system that allowed charity organisers to automatically deliver content to users in return for donations \\
+  \item Web applications that managed promotional subscriptions for mobile phone company users \\
+  \item A company-internal file storage system using Apache Cassandra for metadata \\
+  \end{itemize}}
+&
+2011 \textit{($\frac{1}{2}$ yr)} & \textbf{Software development internship} at \textit{Amadeus} \\
+& I wrote a prototype for the Baggage Reconciliation System, a mobile Windows Forms app in C\#. I integrated with the back-end with C++.\\
 
 \end{tabular}\\[10pt]
 
 %----------------------------------------------------------------------------------------
-%	VOLUNTEERING
+%	OTHER SOFTWARE
 %----------------------------------------------------------------------------------------
 
-%\section{\fontsize{11pt}{101pt}\selectfont Volunteering}
-\section{Volunteering}
+\section{Other software}
+\hfill \break
 
-\normalsize{
-\begin{itemize}
-\item \textit{Imperial College Music Tech Society} Chair, Treasurer and Production Manager
-\item \textit{Imperial College Robotics Society} Megabyte Talks organizer, Treasurer and Lead software engineer
-\end{itemize}
-}
+\begin{tabular}{l l}
 
-%----------------------------------------------------------------------------------------
-%	INTERESTS
-%----------------------------------------------------------------------------------------
+Ask me about \textit{drumman}, \textit{ListenerApp}, \textit{TimTom} and other personal projects available on \href{http://github.com/williamberg}{GitHub \includegraphics[height=1em]{res/github}} /williamberg & \\
+ & \\
 
-%\section{\fontsize{11pt}{101pt}\selectfont Interests} 
-\section{Interests} 
-
-{\small
-{\raggedright
-\begin{minipage}[t]{0.25\textwidth}
-\vspace{0pt} % Trick for alignment
-{\raggedleft
-	\textit{
-		{
-		  Sound and Music \\ \vspace{5\baselineskip} \vspace{0.5\baselineskip}
-		  The Mind and Brain \\ \vspace{0\baselineskip} \vspace{0.5\baselineskip}
-		  Teaching \\ \vspace{1\baselineskip} \vspace{0.5\baselineskip}
-		  Evolving tech \\ \vspace{0\baselineskip}
-		}
-	}
-}
-\end{minipage}
-} % TODO: Fix right side align here and in the previous subsection
-{\raggedleft
-\begin{minipage}[t]{0.65\textwidth} 
-\vspace{0pt} %trick for alignment
-Grade 5 ABRSM certifications in piano and music theory. \\
-Many years experience in electronic music production and DJing in amateur and professional roles. \\
-Experimental music software writer. \\
-Electric bass and guitar enthusiast.\vspace{0.5\baselineskip}\\
-Up-to-date in Cognitive Neuroscience and Neuropharmacology.\vspace{0.5\baselineskip}\\
-Have held a number of tutoring roles to colleagues and young people.\vspace{0.5\baselineskip}\\
-Commercial tech follower and Google Campus fan.
-\end{minipage}
-}\\[10pt]
-}
+\end{tabular}\\[10pt]
 
 %----------------------------------------------------------------------------------------
-%	REFERENCES
+%	MEMBERSHIPS AND HOBBIES
 %----------------------------------------------------------------------------------------
 
-%\section{\fontsize{11pt}{101pt}\selectfont References} 
-\section{References} 
+\section{Memberships and hobbies}
+\hfill \break
 
-{\small
-\begin{indented}{1cm}
-Available on request.
-\end{indented}
-}
+\href{http://www.meiquan.co.uk/}{\includegraphics[height=2em]{res/tai_chi_symbol}} Mei Quan Taiji
+\hspace{3em}
+\href{https://soundcloud.com/dj_niceberg/}{\includegraphics[height=2em]{res/soundcloud}} /dj\_niceberg
+\\[10pt]
 
 %----------------------------------------------------------------------------------------
-	
-\end{minipage} % End right-hand side of the page
+%	CERTIFICATION
+%----------------------------------------------------------------------------------------
+
+\section{Certification}
+\hfill \break
+
+\begin{tabular}{l l}
+
+UK driver & \\
+Grade 5 ABRSM piano and music theory
+
+\end{tabular}\\[10pt]
+
 \end{document}  
